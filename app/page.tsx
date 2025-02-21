@@ -185,7 +185,7 @@ export default function Home() {
                   {[{ value: "专属书签夹" }, { value: "LOOKBOOK" }].map((stat, index) => (
                     <div key={index} className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                       <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                      <div className="text-xl font-bold text-gray-600">{stat.label}</div>
+                      {/* <div className="text-xl font-bold text-gray-600">{stat.label}</div> */}
                     </div>
                   ))}
                 </div>
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* 页脚 */}
-      <PageFooter/>
+      <PageFooter />
     </div>
   );
 }
