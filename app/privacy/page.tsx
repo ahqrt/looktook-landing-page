@@ -1,25 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { PageFooter } from "@/components/ui/pagefooter";
 import { Separator } from "@/components/ui/separator";
-import { Mountain } from "lucide-react";
-import Link from "next/link";
+import { Header } from "@/components/ui/header";
 
 export default function PrivacyPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       {/* 页眉 */}
-      <header className="border-b px-4 py-4 md:px-6">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <Mountain className="h-6 w-6" />
-            <span className="text-xl font-bold">LOOKTOOK</span>
-          </Link>
-          <nav className="hidden space-x-6 md:flex">
-            <Link href="/" className="text-sm hover:text-primary">
-              首页
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header/>
 
       {/* 主要内容 */}
       <main className="flex-1 p-4 md:p-8 lg:p-12">
@@ -102,34 +90,7 @@ export default function PrivacyPage() {
       </main>
 
       {/* 页脚 */}
-      <footer className="border-t px-4 py-6 md:px-6">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="space-y-3">
-              <ul className="space-y-1">
-                <li>
-                  <Link
-                    href="/privacy"
-                    className="text-sm text-muted-foreground hover:text-primary"
-                  >
-                    隐私政策
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary">
-                    用户协议
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="mt-8 border-t pt-8">
-              <p className="text-center text-sm text-muted-foreground">
-                © {new Date().getFullYear()} 公司名称. 保留所有权利。
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <PageFooter/>
     </div>
   );
 }
