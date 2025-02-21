@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { PageFooter } from "@/components/ui/pagefooter";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,8 +14,14 @@ export default function Home() {
       {/* 导航栏 */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold">
-            LookTook
+          <Link href="/" className="flex items-center space-x-2">
+            <Image 
+              src="/image/icon.jpg" 
+              alt="LookTook Logo"
+              width={24}  
+              height={24}
+            />
+            <span className="text-xl font-bold">LookTook</span>
           </Link>
         </div>
       </nav>
