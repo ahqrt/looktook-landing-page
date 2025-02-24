@@ -15,12 +15,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Image 
-              src="/image/icon.jpg" 
-              alt="LookTook Logo"
-              width={24}  
-              height={24}
-            />
+            <Image src="/image/icon.jpg" alt="LookTook Logo" width={24} height={24} />
             <span className="text-xl font-bold">LookTook</span>
           </Link>
         </div>
@@ -86,24 +81,24 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] md:h-[500px]">
+            <div className="relative h-[500px] md:h-[600px]">
               <div className="absolute top-0 left-0 w-3/4 h-auto transform -rotate-3 transition-transform hover:rotate-0 duration-500 z-10">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Weixin%20Image_20250220234857-drE9FlGkIaGLOMTGeVUk7Sqnc8MDM7.png"
                   alt="LOOKTOOK Fitness Showcase 1"
-                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  className=" w-2/3 h-auto rounded-2xl shadow-2xl object-cover"
                 />
               </div>
               <div className="absolute top-20 right-0 w-3/4 h-auto transform rotate-3 transition-transform hover:rotate-0 duration-500">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Weixin%20Image_20250220234851-GnAkH7lwrWSwkqRHRpyTLw6CJrTqlw.png"
                   alt="LOOKTOOK Fitness Showcase 2"
-                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  className=" w-2/3 h-auto rounded-2xl shadow-2xl object-cover"
                 />
               </div>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-8 ">
               <div className="inline-flex items-center rounded-full bg-[#CBF229]/10 px-3 py-1 text-sm text-[#CBF229]">
                 Revolutionary Experience
               </div>
